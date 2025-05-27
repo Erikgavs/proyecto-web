@@ -41,5 +41,27 @@ a:hover{
 /* MAIN */
 main{
     background-color: black;
-    padding: 300px;
+    border: 1px solid;
+    border-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vw;
+}
+
+/* ENCABEZADO PRINCIPAL */
+
+.main-header{
+    text-align: center;
+    margin-top: 40px
+}
+
+.main-p{
+    text-align: center;
+}
+
+/* SECCIÓN 1 */
+
+.section-1{
+    margin-left: 50px;
+    margin-top: 70px;
 }
