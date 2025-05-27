@@ -5,6 +5,7 @@ body{
 /* ENCABEZADO */
 header{
     text-align: center;
+    text-shadow: 10px 10px 10px #000000;
     background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1)); /* DEGRADADO */
     color: white;
     padding: 1%;
@@ -57,11 +58,18 @@ main{
 
 .main-p{
     text-align: center;
+    font-size: 17px;
 }
 
 /* SECCIÓN 1 */
 
 .section-1{
-    margin-left: 50px;
+    margin-left: 150px;
     margin-top: 70px;
+}
+
+.p-1{
+    width: 500px; /* LARGO DEL PARAGRAFO */
+    text-align: justify; /* JUSTIFICAR TEXTO DEL PARÁGRAFO */
+    font-size: 17px;
 }
