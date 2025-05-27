@@ -6,6 +6,7 @@ body{
 header{
     text-align: center;
     text-shadow: 10px 10px 10px #000000;
+    font-size: 25px;
     background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1)); /* DEGRADADO */
     color: white;
     padding: 1%;
@@ -53,7 +54,8 @@ main{
 
 .main-header{
     text-align: center;
-    margin-top: 40px
+    margin-top: 40px;
+    font-size: 20px;
 }
 
 .main-p{
@@ -72,4 +74,16 @@ main{
     width: 500px; /* LARGO DEL PARAGRAFO */
     text-align: justify; /* JUSTIFICAR TEXTO DEL PARÁGRAFO */
     font-size: 17px;
+}
+
+.marca{
+    margin-top: 100px;
+    font-size: 50px;
+    color: green;
+}
+
+/* ASIDE */
+
+.img-1{
+    float: right;  
 }
