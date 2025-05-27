@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    width: 101vw;
 }
 
 /* ENCABEZADO */
@@ -28,7 +29,8 @@ li{
     text-align: center;
     text-decoration: none;
     display: inline;
-    margin-inline-start: 70px;
+    margin-inline-start: 150px;
+    margin-right: 90px;
 }
 
 nav, a{
@@ -67,23 +69,53 @@ main{
 
 .section-1{
     margin-left: 150px;
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
+/* Encabezado sección 1 */
+.header-sec1{
+    font-size: 35px;
+}
+
+/* Paragráfo 1 */
 .p-1{
-    width: 500px; /* LARGO DEL PARAGRAFO */
+    width: 700px; /* LARGO DEL PARAGRAFO */
     text-align: justify; /* JUSTIFICAR TEXTO DEL PARÁGRAFO */
-    font-size: 17px;
+    font-size: 20px;
 }
 
+/* Contenedor section y aside */
+
+.section-aside{ 
+    display: flex; /* display: flex; Convertimos el contenedor en un contenedor flexible y alíneamos los ítems */
+    align-items: flex-start; /* Alínea todo arriba y no lo bloquea, por lo que si quiero bajar la imagen y no el texto puedo */
+    gap: 400px; /* Espacio entre el section y el aside (30px) */
+}
+
+/* POWER DRINK'S Y SU CONTENIDO */
 .marca{
     margin-top: 100px;
     font-size: 50px;
     color: green;
 }
 
-/* ASIDE */
+/* Power drink's parágrafo */
+.p-2{
+    width: 700px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* ASIDE */ 
+.aside-1{
+    align-self: flex-end;
+    margin-top: 15px;
+}
 
 .img-1{
-    float: right;  
+    max-width: 300px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 75px;
+    transform: rotate(30deg);
 }
