@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+/* ENCABEZADO */
+header{
+    text-align: center;
+    background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1)); /* DEGRADADO */
+    color: white;
+    padding: 1%;
+}
+
+/* NAV-VAR */
+nav{
+    background: linear-gradient(to bottom, rgb(1, 12, 1), rgb(0, 0, 0));
+}
+
+ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+li{
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    margin-inline-start: 70px;
+}
+
+nav, a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: green;
+}
+
+/* MAIN */
+main{
+    background-color: black;
+    padding: 300px;
+}
