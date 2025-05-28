@@ -145,35 +145,42 @@ main{
 /* Article */
 /* En article no sé si poner la primera letra en verde y la de healthy en rojo*/
 .article-1{
-    float: right;
-    font-size: 20px;
     width: 500px;
-    margin-right: 200px;
-    margin-top: 70px;
+    margin-left: auto;
 }
 
+/* Article 1 header*/
+.article1-header{
+    font-size: 30px;
+}
+
+/* Imagen article */
 .img-article-1{
     max-width: 250px;
-    margin-left: 100px;
-    margin-top: 35px;
 }
 
+/* hover para la imagen */
 .img-article-1:hover{
     filter: drop-shadow(1px 1px 10px green);
 }
 
+
 /* Artiuclo 2 */
 
-.header-article-2{
-    font-size: 25px;
-    margin-left: 700px;
+.article-2{
+    margin-left: 725px;
 }
 
-/* DIV de article 1 y article 2 arreglarlo!
+.header-article-2{
+    font-size: 30px
+}
+
+/* DIV de article 1 y article 2 arreglarlo! */
 
 .article-article{
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
+    padding: 40px 100px;
 }
 
-*/
