@@ -142,7 +142,7 @@ main{
     font-size: 25px;
 }
 
-/* Article */
+/* Article 1 */
 /* En article no sé si poner la primera letra en verde y la de healthy en rojo*/
 .article-1{
     width: 500px;
@@ -151,12 +151,19 @@ main{
 
 /* Article 1 header*/
 .article1-header{
+    margin-left: 85px;
     font-size: 30px;
 }
 
-/* Imagen article */
+/* Párrafo article 1*/
+.p-4{
+    font-size: 20px;
+}
+/* Imagen article 1 */
 .img-article-1{
     max-width: 250px;
+    margin-top: 15px;
+    margin-left: 110px;
 }
 
 /* hover para la imagen */
@@ -168,11 +175,18 @@ main{
 /* Artiuclo 2 */
 
 .article-2{
-    margin-left: 725px;
+    margin-left: 670px;
 }
 
 .header-article-2{
-    font-size: 30px
+    font-size: 30px;
+    margin-left: 47px;
+}
+
+.p-3{
+    width: 400px;
+    font-size: 20px;
+    margin-right: 100px;
 }
 
 /* DIV de article 1 y article 2 arreglarlo! */
