@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    width: 100vw;
 }
 
 /* ENCABEZADO */
@@ -10,7 +9,7 @@ header{
     font-size: 25px;
     background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1)); /* DEGRADADO */
     color: white;
-    padding: 1%;
+    padding: 1em;
 }
 
 /* NAV-VAR */
@@ -191,7 +190,7 @@ main{
 
 .img-article2{
     max-width: 370px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-right: 30px;
 }
 
@@ -202,10 +201,16 @@ main{
 /* Articulo 3 */
 
 .article-3{
-    margin-right: px;
+    margin-right: -230px;
+    margin-left: 95px;
 }
 
-/* DIV de article 1 y article 2 arreglarlo! */
+.article3-header{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+/* DIV de article 1 y article 2 y article 3 */
 
 .article-article{
     display: flex;
