@@ -244,3 +244,25 @@ article img{
 }
 
 
+.boton-1{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    border: 1px solid white;
+    margin-top: 50px;
+}
+
+.boton-1 button{
+    color: green;
+    background-color: black;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.boton-1 button:hover{
+    background-color: green;
+    color: white;
+    transition: all 0.7s ease-in-out;
+    border-radius: 10px;
+}
