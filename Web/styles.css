@@ -50,7 +50,7 @@ main{
     border-color: black;
     color: white;
     width: 100%;
-    height: 100vw;
+    min-height: 100vh;
 }
 
 /* ENCABEZADO PRINCIPAL */
@@ -244,7 +244,8 @@ article img{
 }
 
 
-.boton-1{
+
+.boton-1-div{
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -252,7 +253,8 @@ article img{
     margin-top: 50px;
 }
 
-.boton-1 button{
+
+.boton-1-div button{
     color: green;
     background-color: black;
     border: none;
@@ -260,9 +262,47 @@ article img{
     border-radius: 10px;
 }
 
-.boton-1 button:hover{
+.boton-1-div button:hover{
     background-color: green;
     color: white;
     transition: all 0.7s ease-in-out;
-    border-radius: 10px;
+    border-radius: 10px;;
+}
+
+
+/* Sección de transición con el section al que el botón nos llevará */
+.transition-section-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 200px 100px ;
+    border: 1px solid white;
+}
+
+.transition-section h1{
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.img-transition-section{
+    height: auto;
+    border: 20px solid white;
+    max-width: 500px;
+}
+
+.header-transition-section-vertical{
+    text-align: center;
+    border: 1px solid white;
+    margin: 0;
+    width: 100%;
+}
+
+/* Visual de los rectangulos de espacio de los contenedores */
+
+section img{
+    border: 1px solid white;
 }
