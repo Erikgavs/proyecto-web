@@ -1,3 +1,6 @@
+
+/* CUANDO EL HOME ESTÉ ACABADO QUITAR TODOS LOS BORDERS */
+
 body{
     margin: 0;
 }
@@ -119,6 +122,7 @@ main{
     margin-top: 60px;
     margin-left: 30px;
     transform: rotate(30deg);
+    border: 1px solid white;
 }
 
 /* Efecto imagen */
@@ -156,8 +160,9 @@ main{
 
 /* Párrafo article 1*/
 .p-4{
-    text-align: center
-;    font-size: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid white;
 }
 /* Imagen article 1 */
 
@@ -191,17 +196,20 @@ article img{
 .article-2{
     width: 100%;
     flex: 1;
+    border: 1px solid white;
 }
 
 .header-article-2{
     font-size: 30px;
     text-align: center;
+    border: 1px solid white;
 }
 
 .p-3{
     font-size: 20px;
     text-align: center;
     flex: 1;
+    border: 1px solid white;
 }
 
 
@@ -223,12 +231,14 @@ article img{
 
 .article3-header{
     font-size: 30px;
+    border: 1px solid white;
 }
 
 .p-5{
     max-width: 400px;
     font-size: 20px;
     margin-right: 25px;
+    border: 1px solid white;
 }
 
 
@@ -271,34 +281,42 @@ article img{
 
 
 /* Sección de transición con el section al que el botón nos llevará */
-.transition-section-div{
+
+.transition-section-div section{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
     padding: 200px 100px ;
-    border: 1px solid white;
+}
+ 
+/* EFECTO HOVER */
+.transition-section-div img:hover{
+    filter: drop-shadow(1px 1px 10px green);
+}
+/* Rotación de las dos imagenes */
+/* Ajsutar los grados para que quede igual */
+.transition-img1-div{
+    transform: rotate(340deg);
+}
+
+.transition-img2-div{
+    transform: rotate(30deg);
 }
 
 .transition-section h1{
     font-size: 30px;
     color: white;
-    margin: 0;
-    text-align: center;
 }
 
-.img-transition-section{
-    height: auto;
-    border: 20px solid white;
-    max-width: 500px;
+.img1-transition-section{
+    border: 1px solid white
 }
 
 .header-transition-section-vertical{
-    text-align: center;
     border: 1px solid white;
-    margin: 0;
-    width: 100%;
 }
 
 /* Visual de los rectangulos de espacio de los contenedores */
