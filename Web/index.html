@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <!--Header-->
@@ -87,7 +88,7 @@
 
         <!--Botón que hará la transición hacia abajo-->
         <div class="boton-1-div">
-            <button class="boton-color">Más abajo</button>
+            <button id="transicion" class="boton-color" onclick="scrollToSection()">Más abajo</button>
         </div>
 
         <!-- Sección de transición hacía abajo-->
@@ -96,10 +97,15 @@
                 <div class="transition-img1-div">
                     <img class="img1-transition-section" src="assets/Lata-modelo.png" alt="imagen de bebida">
                 </div>
-                <h1 class="header-transition-section-vertical">The best Energy</h1>
+                <h1 class="header-transition-section-vertical"><span style="color: green;">T</span>he <span style="color: green;">b</span>est <span style="color: green;">E</span>nergy Drink </h1>
                 <div>
                     <img class="transition-img2-div" src="assets/Lata-modelo.png" alt="imagen de bebida">
                 </div>
+            </section>
+        </div>
+        <div id="ancla" class="last-sec-div">
+            <section class="last-sec">
+                <h1 class="last-sec-h1">Transición aquí</h1>
             </section>
         </div>
     </main>

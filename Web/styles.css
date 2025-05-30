@@ -53,7 +53,7 @@ main{
     border-color: black;
     color: white;
     width: 100%;
-    min-height: 100vh;
+    min-height: 300vh;
 }
 
 /* ENCABEZADO PRINCIPAL */
@@ -303,7 +303,7 @@ article img{
 }
 
 .transition-img2-div{
-    transform: rotate(30deg);
+    transform: rotate(20deg);
 }
 
 .transition-section h1{
@@ -319,8 +319,26 @@ article img{
     border: 1px solid white;
 }
 
+.transition-section-div h1{
+    transform: rotate(90deg);
+    font-size: 60px;
+}
 /* Visual de los rectangulos de espacio de los contenedores */
 
 section img{
     border: 1px solid white;
+}
+
+/* Última sección */
+
+/* Div de la sección entera */
+.last-sec-div{
+    display: flex;
+    justify-content: center;
+}
+/* h1 de sección */
+.last-sec-h1{
+    color: white;
+    border: 1px solid white;
+    font-size: 40px;
 }
