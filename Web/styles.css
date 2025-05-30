@@ -144,26 +144,23 @@ main{
 /* Article 1 */
 /* En article no sé si poner la primera letra en verde y la de healthy en rojo*/
 .article-1{
-    width: 500px;
-    margin-left: auto;
+    width: 100%;
+    flex: 1;
 }
 
 /* Article 1 header*/
 .article1-header{
-    margin-left: 85px;
+    text-align: center;
     font-size: 30px;
 }
 
 /* Párrafo article 1*/
 .p-4{
-    font-size: 20px;
+    text-align: center
+;    font-size: 20px;
 }
 /* Imagen article 1 */
-.img-article-1{
-    max-width: 250px;
-    margin-top: 15px;
-    margin-left: 110px;
-}
+
 
 /* hover para la imagen */
 .img-article-1:hover{
@@ -173,50 +170,77 @@ main{
 
 /* Artiuclo 2 */
 
+article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid; 
+    justify-content: space-between; 
+    align-items: center; 
+    min-height: 400px; /* Altura mínima del artículo */
+}
+
+article img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid;
+    max-height: 200px;
+}
+
+
+
 .article-2{
-    margin-left: 639px;
+    width: 100%;
+    flex: 1;
 }
 
 .header-article-2{
     font-size: 30px;
-    margin-left: 47px;
+    text-align: center;
 }
 
 .p-3{
-    width: 400px;
     font-size: 20px;
-    margin-right: 100px;
+    text-align: center;
+    flex: 1;
 }
 
-.img-article2{
-    max-width: 370px;
-    margin-top: 30px;
-    margin-right: 30px;
-}
 
 .img-article2:hover{
     filter: drop-shadow(1px 1px 10px green);
 }
 
+.img-article3:hover{
+    filter: drop-shadow(1px 1px 10px green);
+}
+
+
 /* Articulo 3 */
 
 .article-3{
-    margin-right: -230px;
-    margin-left: 95px;
+    width: 100%;
+    flex: 1;
 }
 
 .article3-header{
-    margin-top: 30px;
     font-size: 30px;
 }
+
+.p-5{
+    max-width: 400px;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
 
 /* DIV de article 1 y article 2 y article 3 */
 
 .article-article{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 50px;
     align-items: flex-start;
     padding: 30px 100px;
+    flex-wrap: wrap;
 }
 
 
