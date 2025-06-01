@@ -315,10 +315,22 @@ article img{
 
 /* Última sección */
 
+.last-sec-div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 800px;
+    border: 2px solid white;
+}
+
+.last-sec-div aside{
+    flex-direction: row-reverse;
+}
+
 /* Div de la sección entera */
 .last-sec-div h1{
-    display: flex;
     justify-content: center;
+    width: 450px;
 }
 
 /* h1 de sección */
@@ -326,10 +338,13 @@ article img{
     color: white;
     border: 1px solid white;
     font-size: 40px;
+    
 }
 
 .p-last-sec{
     font-size: 25px;
+    border: 1px solid white;
+    width: 600px;
 }
 
 /* Formulario-Div */
@@ -358,30 +373,24 @@ input{
 /* BOTÓN DE FORMULARIO */
 
 .formulario button{
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 20px;
     width: 505px;
+    background-color: green;
+    color: white;
+    border: 2px solid white;
     border-radius: 10px;
 }
 
 .formulario button:hover{
-    
-    
-}
-
-/*
-.boton-1-div button{
+    background-color: transparent;
+    border: 2px solid green;
     color: green;
-    background-color: black;
-    border: none;
-    font-size: 25px;
-    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
 }
 
-.boton-1-div button:hover{
-    background-color: green;
-    color: white;
-    transition: all 0.7s ease-in-out;
-    border-radius: 10px;;
+.last-sec-aside-div{
+    flex: 1;
+    border: 1px solid white;
 }
-*/
+
