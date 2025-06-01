@@ -397,3 +397,38 @@ input{
     font-size: 25px;
     width: 600px;
 }
+
+/* Footer */
+
+.footer-flex{
+    background: linear-gradient(to bottom, black, green);
+    min-height: 5vh;
+}
+
+footer {
+    margin: 0;
+    padding: 1em;
+}
+
+footer h1{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.contact{
+    color: white;
+    margin-top: 45px;
+}
+
+.p-1-footer:hover{
+    color: green;
+}
+
+.p-2-footer:hover{
+    color: green;
+}
+
+.p-3-footer:hover{
+    color: green;
+}
