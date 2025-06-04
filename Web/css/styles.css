@@ -432,3 +432,28 @@ footer h1{
 .p-3-footer:hover{
     color: green;
 }
+
+
+/* ABOUT US PAGE */
+
+/* MAIN HEADER DEL MAIN */
+
+
+
+.header-aboutus{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+.header-aboutus p {
+    justify-content: center;
+}
+
+/* ASIDE */
+.aside-aboutus{
+    font-size: 20px;
+    margin-top: 70px;
+    padding: 20px;
+}
