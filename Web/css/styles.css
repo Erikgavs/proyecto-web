@@ -452,8 +452,18 @@ footer h1{
 }
 
 /* ASIDE */
+
+.aside-aboutus-div{
+    display: flex;
+    padding-left: 2vw;
+}
+
 .aside-aboutus{
     font-size: 20px;
     margin-top: 70px;
-    padding: 20px;
+    border: 1px solid white;
+}
+
+.aside-aboutus p{
+    max-width: 700px;
 }
