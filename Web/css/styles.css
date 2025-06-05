@@ -467,3 +467,10 @@ footer h1{
 .aside-aboutus p{
     max-width: 700px;
 }
+
+.imagen-laurel{
+    margin-left: 200px;
+    margin-top: 25px;
+    max-width: 1500px;
+    border: 1px solid white;
+}
