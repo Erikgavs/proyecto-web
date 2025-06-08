@@ -453,8 +453,12 @@ footer h1{
 
 /* ASIDE */
 
-.aside-aboutus-div{
+.asides{
     display: flex;
+    flex-direction: column;
+}
+
+.aside-aboutus-div{
     padding-left: 2vw;
 }
 
@@ -462,6 +466,11 @@ footer h1{
     font-size: 20px;
     margin-top: 70px;
     border: 1px solid white;
+    width: 700px;
+}
+
+.aside-aboutus p{
+    display: block;
 }
 
 .aside-aboutus p{
@@ -469,8 +478,18 @@ footer h1{
 }
 
 .imagen-laurel{
+    flex: 1 1 400px;
     margin-left: 200px;
     margin-top: 25px;
     max-width: 1500px;
+    border: 1px solid white;
+}
+
+/* AÑADIR HOVER */
+
+.aside2{
+}
+
+.aside2 h1{
     border: 1px solid white;
 }
