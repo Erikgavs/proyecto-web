@@ -455,12 +455,10 @@ footer h1{
 
 .asides{
     display: flex;
-    flex-direction: column;
+    gap: 800px;
+    align-items: flex-start;
 }
 
-.aside-aboutus-div{
-    padding-left: 2vw;
-}
 
 .aside-aboutus{
     font-size: 20px;
@@ -469,27 +467,30 @@ footer h1{
     width: 700px;
 }
 
-.aside-aboutus p{
+.aside-aboutus img{
     display: block;
+    margin: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 .aside-aboutus p{
+    display: block;
     max-width: 700px;
 }
 
-.imagen-laurel{
-    flex: 1 1 400px;
-    margin-left: 200px;
-    margin-top: 25px;
-    max-width: 1500px;
-    border: 1px solid white;
+/* Imagen aside-aboutus (Laurel) */
+
+.imagen-asides{
+    max-width: 300px;
 }
 
-/* AÑADIR HOVER */
+.imagen-asides:hover{
+    filter: drop-shadow(1px 1px 10px green);
+}
+
 
 .aside2{
-}
-
-.aside2 h1{
+    margin-top: 70px;
     border: 1px solid white;
 }
