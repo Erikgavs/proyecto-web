@@ -1,7 +1,7 @@
 
 /* CUANDO EL HOME ESTÉ ACABADO QUITAR TODOS LOS BORDERS */
 
-body{
+.body{
     margin: 0;
 }
 
@@ -47,7 +47,7 @@ a:hover{
 }
 
 /* MAIN */
-main{
+.main{
     background-color: black;
     border: 1px solid;
     border-color: black;
@@ -402,7 +402,7 @@ input{
 
 .footer-flex{
     background: linear-gradient(to bottom, black, green);
-    min-height: 5vh;
+    min-height: 1vh
 }
 
 footer {
@@ -436,14 +436,27 @@ footer h1{
 
 /* ABOUT US PAGE */
 
+body.aboutus-page{
+    min-height: 100vh;
+}
+
+.aboutus-page{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 200vh;
+    margin: 0;
+    padding: 0;
+}
+
 /* MAIN HEADER DEL MAIN */
-
-
 
 .header-aboutus{
     text-align: center;
     margin-top: 80px;
     font-size: 20px;
+    color: white;
+    
 }
 
 .header-aboutus p {
@@ -456,10 +469,12 @@ footer h1{
     display: flex;
     gap: 375px;
     align-items: flex-start;
+    color: white;
 }
 
 
 .aside-aboutus{
+    padding: 0px 20px;
     font-size: 20px;
     margin-top: 70px;
     width: 700px;
@@ -494,9 +509,28 @@ footer h1{
 }
 
 .aside2 p{
-    max-width: 700px;
+    max-width: 900px;
 }
 
 .aside2 img:hover{
     filter: drop-shadow(1px 1px 10px green);
+}
+
+
+.footer-flex{
+    min-height: 1vh;
+}
+
+/* Footer */
+
+footer{
+    margin: 0;
+    padding: 1em;
+    min-height: 1vh;
+}
+
+footer h1{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
 }
