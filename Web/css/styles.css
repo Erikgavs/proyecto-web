@@ -516,12 +516,15 @@ body.aboutus-page{
     filter: drop-shadow(1px 1px 10px green);
 }
 
+/* Footer */
 
 .footer-flex{
     min-height: 1vh;
 }
 
-/* Footer */
+.footer-flex p{
+    color: white;
+}
 
 footer{
     margin: 0;
