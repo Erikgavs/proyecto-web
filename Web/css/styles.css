@@ -543,9 +543,15 @@ footer h1{
 /* BODY */
 .body-drinks{
     margin: 0;
+    background-color: black;
 }
 
 /* MAIN */
 
-
+.main-drinks{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
 
