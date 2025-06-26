@@ -555,3 +555,11 @@ footer h1{
     color: white;
 }
 
+.main-header-drinks{
+    text-align: center;
+    margin-top: 75px;
+}
+
+.article-drinks-main{
+    border: 1px solid white;
+}
