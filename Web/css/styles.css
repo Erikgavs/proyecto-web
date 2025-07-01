@@ -619,3 +619,55 @@ footer h1{
     flex-direction: column;
     color: white;
 }
+
+/* CARD 3 */
+
+.card-3{   
+    background: linear-gradient(to bottom, #FFF5E1, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    display: flex;
+}
+
+.card-3:hover{
+    transform: scale(1.03);
+}
+
+.card-3 img{
+    display: block;
+}
+
+.card-3 .descripcion-3{
+    padding: 16px;
+    text-align: center;
+}
+
+
+/* ARTICLE 2 EN EL QUE VOY A HACER OTRA LÍNEA DE BEBIDAS DE SABORES, SEPARADA DEL ARTICLE 1*/
+/* DISPLAY FLEX PARA LAS CARDS DEL ARTICLE 2*/
+
+.flex-cards-2{
+    display: flex;
+    gap: 200px;
+    flex: wrap;
+}
+
+/* CARD 4 */
+
+.card-4{
+    background: linear-gradient(to bottom, #D32F2F, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+}
+
+.card-4 img{
+    display: block;
+}
+
+.card-4 .descripcion-4{
+    padding: 16px;
+    text-align: center;
+}
+
