@@ -560,6 +560,62 @@ footer h1{
     margin-top: 75px;
 }
 
-.article-drinks-main{
-    border: 1px solid white;
+/* DISPLAY FLEX PARA TODAS LAS CARDS */
+
+.flex-cards{
+    margin-top: 20px;
+    display: flex;
+    gap: 200px;
+    flex: wrap;
+}
+
+/* Card 1 */
+
+.card{
+    background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1)); /* DEGRADADO */
+    max-width: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+}
+
+.card img{
+    width: 50%;
+    display: block;
+    overflow: hidden;
+}
+
+.card .descripcion{
+    padding: 16px;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+/* CARD 2 */
+
+.card-2{
+    background: linear-gradient(to bottom, #FFA62B, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    display: flex;
+}
+
+.card-2:hover{
+    transform: scale(1.03);
+}
+
+.card-2 img{
+    display: block;
+}
+
+.card-2 .descripcion-2{
+    padding: 16px;
+    text-align: center;
+    flex-direction: column;
+    color: white;
 }
