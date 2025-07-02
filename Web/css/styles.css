@@ -562,12 +562,15 @@ footer h1{
 
 /* DISPLAY FLEX PARA TODAS LAS CARDS */
 
+
+
 .flex-cards{
     margin-top: 20px;
     display: flex;
-    gap: 200px;
-    flex: wrap;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
 
 /* Card 1 */
 
@@ -648,7 +651,7 @@ footer h1{
 
 .flex-cards-2{
     display: flex;
-    gap: 200px;
+    gap: 20px;
     flex: wrap;
 }
 
@@ -671,3 +674,44 @@ footer h1{
     text-align: center;
 }
 
+/* CARD 5 */
+
+.card-5{
+    background: linear-gradient(to bottom, #D9F03C, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+}
+
+.card img{
+    display: block;
+}
+
+.card-5 .descripcion-5 {
+    padding: 16px;
+    text-align: center;
+}
+
+/* CARD 6 */
+
+.card-6{
+    background: linear-gradient(to bottom, #3B4CCA, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    display: flex;
+    transition: transform .2s;
+}
+
+.card-6:hover{
+    transform: scale(1.08);
+}
+
+.card-6 img{
+    display: block;
+}
+
+.card-6 .descripcion-6{
+    padding: 16px;
+    text-align: center;
+}
