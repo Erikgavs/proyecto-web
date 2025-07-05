@@ -5,7 +5,3 @@ function scrollToSection() {
         behavior: "smooth"
     })
 }
-
-document.querySelector(".card").addEventListener("click", function(){
-    window.location.href = "bebida1.html";
-});
