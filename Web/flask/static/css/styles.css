@@ -1,0 +1,760 @@
+
+/* CUANDO EL HOME ESTÉ ACABADO QUITAR TODOS LOS BORDERS */
+
+.body{
+    margin: 0;
+}
+
+/* ENCABEZADO */
+header{
+    text-align: center;
+    text-shadow: 10px 10px 10px #000000;
+    font-size: 25px;
+    background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1)); /* DEGRADADO */
+    color: white;
+    padding: 1em;
+}
+
+/* NAV-VAR */
+nav{
+    background: linear-gradient(to bottom, rgb(1, 12, 1), rgb(0, 0, 0));
+
+}
+
+ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+li{
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    margin-inline-start: 150px;
+    margin-right: 90px;
+}
+
+nav, a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover{
+    color: green;
+}
+
+/* MAIN */
+.main{
+    background-color: black;
+    border: 1px solid;
+    border-color: black;
+    color: white;
+    width: 100%;
+    min-height: 300vh;
+}
+
+/* ENCABEZADO PRINCIPAL */
+
+.main-header{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.main-p{
+    text-align: center;
+    font-size: 17px;
+}
+
+/* SECCIÓN 1 */
+
+.section-1{
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+/* Encabezado sección 1 */
+.header-sec1{
+    font-size: 35px;
+}
+
+/* Paragráfo 1 */
+.p-1{
+    width: 700px; /* LARGO DEL PARAGRAFO */
+    text-align: justify; /* JUSTIFICAR TEXTO DEL PARÁGRAFO */
+    font-size: 20px;
+}
+
+/* Contenedor section y aside */
+
+.section-aside{ 
+    display: flex; /* display: flex; Convertimos el contenedor en un contenedor flexible y alíneamos los ítems */
+    align-items: flex-start; /* Alínea todo arriba y no lo bloquea, por lo que si quiero bajar la imagen y no el texto puedo */
+    gap: 400px; /* Espacio entre el section y el aside (30px) */
+}
+
+/* POWER DRINK'S Y SU CONTENIDO */
+.marca{
+    margin-top: 100px;
+    font-size: 50px;
+    color: green;
+}
+
+/* Power drink's parágrafo */
+.p-2{
+    width: 700px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* ASIDE */ 
+.aside-1{
+    align-self: flex-end;
+    margin-top: 15px;
+}
+
+.img-1{
+    max-width: 350px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 30px;
+    transform: rotate(30deg);
+}
+
+/* Efecto imagen */
+/* Añado un hover a la lata que al pasar el cursor se pone una sombra verde*/
+.img-1:hover {
+    filter: drop-shadow(1px 1px 10px green);
+}
+
+/* Sección 2 */
+
+/* DIV que une section-1  y article-1 */
+.section-article{
+    margin-top: 100px;
+}
+
+.section-2{ 
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+/* Article 1 */
+/* En article no sé si poner la primera letra en verde y la de healthy en rojo*/
+.article-1{
+    width: 100%;
+    flex: 1;
+}
+
+/* Article 1 header*/
+.article1-header{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Párrafo article 1*/
+.p-4{
+    text-align: center;
+    font-size: 20px;
+}
+/* Imagen article 1 */
+
+
+/* hover para la imagen */
+.img-article-1:hover{
+    filter: drop-shadow(1px 1px 10px green);
+}
+
+
+/* Artiuclo 2 */
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    min-height: 400px; /* Altura mínima del artículo */
+}
+
+article img{
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+
+
+.article-2{
+    width: 100%;
+    flex: 1;
+}
+
+.header-article-2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.p-3{
+    font-size: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+
+.img-article2:hover{
+    filter: drop-shadow(1px 1px 10px green);
+}
+
+.img-article3:hover{
+    filter: drop-shadow(1px 1px 10px green);
+}
+
+
+/* Articulo 3 */
+
+.article-3{
+    width: 100%;
+    flex: 1;
+}
+
+.article3-header{
+    font-size: 30px;
+}
+
+.p-5{
+    max-width: 400px;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+
+/* DIV de article 1 y article 2 y article 3 */
+
+.article-article{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: flex-start;
+    padding: 30px 100px;
+    flex-wrap: wrap;
+}
+
+
+
+.boton-1-div{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    /*
+    border: 1px solid white;
+    */
+    margin-top: 50px;
+}
+
+
+.boton-1-div button{
+    color: green;
+    background-color: black;
+    border: 2px solid green;
+    font-size: 25px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.boton-1-div button:hover{
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px;;
+}
+
+
+/* Sección de transición con el section al que el botón nos llevará */
+
+.transition-section-div section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 200px 100px ;
+}
+ 
+/* EFECTO HOVER */
+.transition-section-div img:hover{
+    filter: drop-shadow(1px 1px 10px green);
+}
+/* Rotación de las dos imagenes */
+/* Ajsutar los grados para que quede igual */
+.transition-img1-div{
+    transform: rotate(340deg);
+}
+
+.transition-img2-div{
+    transform: rotate(20deg);
+}
+
+.transition-section h1{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.transition-section-div h1{
+    transform: rotate(90deg);
+    font-size: 60px;
+}
+
+
+/* Última sección */
+
+.last-sec-div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-left: 25px;
+    gap: 500px;
+}
+
+.last-sec-div aside{
+    flex-direction: row-reverse;
+}
+
+/* Div de la sección entera */
+.last-sec-div h1{
+    justify-content: center;
+    width: 450px;
+}
+
+/* h1 de sección */
+.last-sec-h1{
+    color: white;
+    font-size: 40px;
+    
+}
+
+.p-last-sec{
+    font-size: 25px;
+    width: 600px;
+}
+
+/* Formulario-Div */
+
+.formulario-div{
+    display: flex;
+    font-size: 25px;
+    width: 507px;
+}
+
+
+/* INPUTS */
+
+input{
+    width: 500px;
+    font-size: 15px;
+    border: 3px solid green;
+    background-color: transparent;
+    color: white;
+}
+
+/* BOTÓN DE FORMULARIO */
+
+.formulario button{
+    margin-top: 15px;
+    font-size: 20px;
+    width: 505px;
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.formulario button:hover{
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+    transition: all 0.4s ease-in-out;
+}
+
+/* CONTENEDOR CON MAPA Y HEADER 1 */
+.last-sec-aside-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+
+.last-sec-aside-div h1{
+    text-align: center;
+    font-size: 25px;
+    width: 600px;
+}
+
+/* Footer */
+
+.footer-flex{
+    background: linear-gradient(to bottom, black, green);
+    min-height: 1vh
+}
+
+footer {
+    margin: 0;
+    padding: 1em;
+}
+
+footer h1{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.contact{
+    color: white;
+    margin-top: 45px;
+}
+
+.p-1-footer:hover{
+    color: green;
+}
+
+.p-2-footer:hover{
+    color: green;
+}
+
+.p-3-footer:hover{
+    color: green;
+}
+
+
+/* ABOUT US PAGE */
+
+body.aboutus-page{
+    min-height: 100vh;
+}
+
+.aboutus-page{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 200vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN HEADER DEL MAIN */
+
+.header-aboutus{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.header-aboutus p {
+    justify-content: center;
+}
+
+/* ASIDE */
+
+.asides{
+    display: flex;
+    gap: 375px;
+    align-items: flex-start;
+    color: white;
+}
+
+
+.aside-aboutus{
+    padding: 0px 20px;
+    font-size: 20px;
+    margin-top: 70px;
+    width: 700px;
+}
+
+.aside-aboutus img{
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.aside-aboutus p{
+    display: block;
+    max-width: 700px;
+}
+
+/* Imagen aside-aboutus (Laurel) */
+
+.imagen-asides{
+    max-width: 300px;
+}
+
+.imagen-asides:hover{
+    filter: drop-shadow(1px 1px 10px green);
+}
+
+
+.aside2{
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+.aside2 p{
+    max-width: 900px;
+}
+
+.aside2 img:hover{
+    filter: drop-shadow(1px 1px 10px green);
+}
+
+/* Footer */
+
+.footer-flex{
+    min-height: 1vh;
+}
+
+.footer-flex p{
+    color: white;
+}
+
+footer{
+    margin: 0;
+    padding: 1em;
+    min-height: 1vh;
+}
+
+footer h1{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Página Drinks*/
+
+/* BODY */
+.body-drinks{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* MAIN */
+
+.main-drinks{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.main-header-drinks{
+    text-align: center;
+    margin-top: 75px;
+}
+
+/* Contenedores que envuelven a la fila de arriba y a la de abajo*/
+
+.flex-cards, .flex-cards-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    margin-top: 30px;
+}
+
+.flex-cards-2{
+    margin-top: -25px;
+}
+
+
+/* Card 1 */
+
+.card{
+    background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1)); /* DEGRADADO */
+    max-width: 450px;
+    border-radius: 12px;
+    display: flex;
+    transition: transform .2s;
+}
+
+.card img{
+    width: 45%;
+    display: block;
+    overflow: hidden;
+}
+
+.card .descripcion{
+    padding: 16px;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.card:hover{
+    transform: scale(1.08);
+}
+
+/* CARD 2 */
+
+.card-2{
+    background: linear-gradient(to bottom, #FFA62B, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    display: flex;
+    transition: transform .2s;
+}
+
+.card-2:hover{
+    transform: scale(1.08);
+}
+
+.card-2 img{
+    display: block;
+}
+
+.card-2 .descripcion-2{
+    padding: 16px;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* CARD 3 */
+
+.card-3{   
+    background: linear-gradient(to bottom, #FFF5E1, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    display: flex;
+    transition: transform .2s;
+}
+
+.card-3:hover{
+    transform: scale(1.08);
+}
+
+.card-3 img{
+    display: block;
+}
+
+.card-3 .descripcion-3{
+    padding: 16px;
+    text-align: center;
+}
+
+
+/* ARTICLE 2 EN EL QUE VOY A HACER OTRA LÍNEA DE BEBIDAS DE SABORES, SEPARADA DEL ARTICLE 1*/
+/* CARD 4 */
+
+.card-4{
+    background: linear-gradient(to bottom, #D32F2F, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    display: flex;
+    transition: transform .2s;
+}
+
+.card-4:hover{
+    transform: scale(1.08)
+}
+
+.card-4 img{
+    display: block;
+}
+
+.card-4 .descripcion-4{
+    padding: 16px;
+    text-align: center;
+}
+
+/* CARD 5 */
+
+.card-5{
+    background: linear-gradient(to bottom, #D9F03C, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    transition: transform .2s;
+}
+
+.card-5:hover{
+    transform: scale(1.08);
+}
+
+.card-5 img{
+    display: block;
+}
+
+.card-5 .descripcion-5 {
+    padding: 16px;
+    text-align: center;
+}
+
+/* CARD 6 */
+
+.card-6{
+    background: linear-gradient(to bottom, #3B4CCA, rgb(1, 12, 1));
+    max-width: 450px;
+    border-radius: 12px;
+    display: flex;
+    transition: transform .2s;
+}
+
+.card-6:hover{
+    transform: scale(1.08);
+}
+
+.card-6 img{
+    display: block;
+}
+
+.card-6 .descripcion-6{
+    padding: 16px;
+    text-align: center;
+}
+
+/* ÚLTIMA COLUMNA DIV PADRE*/
+
+.flex-cards-3{
+    margin-top: 25px;
+}
+
+.card-7{
+    display: flex;
+    
+}
+
+/* PÁGINA MEMBERS*/
+
+.body-members{
+    margin: 0;
+}
+
+/* MAIN */
+
+.main-members{
+    color: white;
+    background-color: black;
+    margin: 0!important;
+    padding: 0!important;
+    min-height: 300vh;
+}
+
+/* HEADER MAIN*/
+
+.header-main h1{
+    margin: 0;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* ARREGLAR EL ESPACIO */

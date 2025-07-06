@@ -1,1 +1,11 @@
-/flask/
+flask/bin/
+flask/include/
+flask/lib/
+flask/pyvenv.cfg
+flask/__pycache__/
+
+
+__pycache__/
+*.pyc
+.env
+.DS_Store

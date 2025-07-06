@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body class="body">
+    <!--Header-->
+    <header>
+        <h1>Power Drink's</h1>
+    </header> 
+    
+    <!-- Navigation bar-->
+    <nav>
+        <ul class="nav-list">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('aboutus') }}">About us</a></li>
+            <li><a href="{{ url_for('drinks') }}">Drink's</a></li>
+            <li><a href="{{ url_for('members') }}">Members</a></li>
+        </ul>
+    </nav>
+
+    <!--Main-->
+    <main class="main">
+        <!--Main Header-->
+        <div class="main-header">
+            <!--Primeras letras de color verde, hecho con spay e inyección de código css-->
+            <h1><span style="color: green;">Y</span>our <span style="color: green;">E</span>nergy <span style="color: green;">D</span>rink</h1>
+            <p>To make the best performance</p>
+        </div>
+        
+        <!--Sección 1-->
+        <div class="section-aside">
+            <section>
+                <div class="section-1">
+                    <!--Header del section-->
+                    <h1 class="header-sec1"><span style="color: green;">F</span>or <span style="color: green;">E</span>veryone</h1>
+                    <!--Parágrafo del section-->
+                    <p class="p-1"> No matter if you are a <span style="color: green;">student</span>, a <span style="color: green;">worker</span>, a <span style="color: green;">gamer</span>, or <span style="color: green;">someone</span> that want's a bit of <span style="color: green;">energy</span>, this energy drink is specifically designed for <span style="color: green;">you</span></p>
+                    
+                    <div>
+                        <h1 class="marca"> Power Drink's</h1>
+                        <p class="p-2">A mixture of fuel and power with an exciting and smooth flavor that will make you reach superhuman performance levels, a smell that as soon as it enters your nose will make you reach the limit, you will be invincible with power drinks. </p>
+                        <br>
+                        <p class="p-2">The citrus and fruity touches will make you enjoy an exquisite experience.</p>
+                    </div>
+                </div>
+            </section>
+        <!--aside -->
+            <aside class="aside-1">
+                <img class="img-1" src="{{ url_for('static', filename='assets/Lata-modelo.png') }}" alt="Imagen de bebida">
+            </aside>
+        </div>
+        <!--Sección 2-->
+        <div class="section-article">
+            <section class="section-2">
+                <h1><span style="color: green;">N</span>ext-<span style="color: green;">G</span>en <span style="color: green;">E</span>nergy <span style="color: green;">D</span>rinks</h1>
+            </section>
+        
+            <!--Articulos juntos-->
+            <div class="article-article">
+                
+                <!--Article  (Derecha)-->
+                <article class="article-3">
+                    <h1 class="article3-header"><span style="color: green;">N</span>atural <span style="color: green;">F</span>uel</h1>
+                    <p class="p-5">This energy drink will refill the fuel tanks of your body with energy and power</p>
+                    <img class="img-article3" src="{{ url_for('static', filename='assets/Gasolina.png') }}" alt="Imagen de gasolina">
+                </article>
+                
+                <!--Article 2 (Centro)-->
+                <article class="article-2">
+                    <h1 class="header-article-2"><span style="color: green;">B</span>alanced and <span style="color: green;">T</span>asty</h1>
+                    <p class="p-3"> A perfect mixture of flavors selected by professional to make you feel the best experience </p>
+                    <img class="img-article2" src="{{ url_for('static', filename='assets/Balanza-verde.png') }}" alt="Imagen balanza">
+                </article>
+                
+                <!--Article 1 (Izquierda)-->
+                <article class="article-1">
+                    <h1 class="article1-header"> <span style="color: green;">P</span>owerfull and <span style="color: green;">H</span>ealthy</h1>
+                    <p class="p-4">This energy drink is designed to boost you and make you feel invencible, have a perfect combination of ingredients to make it healthy and worth, it's the ultimate Energy Drink</p>
+                    <img class="img-article-1" src="{{ url_for('static', filename='assets/Modelo-rayo.png') }}" alt="Imagen de un rayo verde">
+                </article>
+            </div>
+        </div>
+
+        <!--Botón que hará la transición hacia abajo-->
+        <div class="boton-1-div">
+            <button id="transicion" class="boton-color" onclick="scrollToSection()">Más abajo</button>
+        </div>
+
+        <!-- Sección de transición hacía abajo-->
+        <div class="transition-section-div">
+            <section class="transition-section">
+                <div class="transition-img1-div">
+                    <img class="img1-transition-section" src="{{ url_for('static', filename='assets/Lata-modelo.png') }}" alt="imagen de bebida">
+                </div>
+                <h1 class="header-transition-section-vertical"><span style="color: green;">T</span>he <span style="color: green;">b</span>est <span style="color: green;">E</span>nergy <span style="color: green;">D</span>rink </h1>
+                <div>
+                    <img class="transition-img2-div" src="{{ url_for('static', filename='assets/Lata-modelo.png') }}" alt="imagen de bebida">
+                </div>
+            </section>
+        </div>
+       
+        <!--OJO CON EL FORM, REVISAR QUE QUEDE BIEN Y TODO-->
+        <div id="ancla" class="last-sec-div">
+            <section class="last-sec">
+                <h1 class="last-sec-h1">Don't miss the latest news</h1>
+                <p class="p-last-sec">Stay up to date with all the latest news from Power Drink's</p>
+                <div class="formulario-div">
+                    <form class="formulario" method="POST" action="/suscribirse">
+                        <!--Ajustar los botones y ponerlos muy largos (por lo menos probar si queda bien)-->
+                        <div>
+                            <label class="label-1" for="mail">Put your email</label> <br>
+                            <input class="input-1" type="text" id="mail" name="mail" placeholder="example@gmail.com" required> <br>
+                        </div>
+                        <div>
+                            <label class="label-2" for="phone">Put your phone number</label> <br>
+                            <input class="input-2" type="number" id="phone" name="phone" placeholder="+34666666666"> <br>
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="last-sec-aside-div">
+                <aside class="last-sec-aside">
+                    <h1>Where you can find us?</h1>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.744601154048!2d2.182329576855182!3d41.423062471295346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcd5801cd2d9%3A0x5034dd89981d7f54!2sCarrer%20de%20Garcilaso%2C%20Sant%20Andreu%2C%2008027%20Barcelona!5e0!3m2!1ses!2ses!4v1748788227239!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <!--Añadir Footer-->
+    <div class="footer-flex">
+        <footer>
+            <h1>By PowerDrinks.org</h1>
+            <div class="contact">
+                <!--Redes sociales y número-->
+                <p class="p-1-footer">powerdrinks.com</p>
+                <p class="p-2-footer">powerdrinkssupport.com</p>
+                <p class="p-3-footer">+34 541 09 92 21</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
