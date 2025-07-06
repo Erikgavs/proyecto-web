@@ -25,9 +25,33 @@
     <main class="main-members">
         <section>
             <div class="header-main">
-                <h1> Welcome to our membership</h1>
+                <h1><span style="color: green;">W</span>elcome to our <span style="color: green;">M</span>embership</h1>
             </div>
+            <article class="article-members">
+                <p class="p-1-members">
+                    We offer a special membership for those people who want's to be part of our project and wants to help us to growth
+                    <br>
+                    <br>
+                    We will also offer our members special prices and monthly deliveries of our fantastic drink. One of our cans will come with a special, completely new flavor. You will also know about upcoming releases ahead of time.
+                </p>
+                <h1>Click on the crown to log in or to become a member</h1>
+                <a href="{{ url_for('login') }}">
+                    <img  class="img-corona" src="{{ url_for('static', filename='assets/Corona.png') }}">
+                </a>
+            </article>
         </section>
     </main>
+    <!--FOOTER-->
+    <div class="footer-flex">
+        <footer>
+            <h1>By PowerDrinks.org</h1>
+            <div class="contact">
+                <!--Redes sociales y número-->
+                <p class="p-1-footer">powerdrinks.com</p>
+                <p class="p-2-footer">powerdrinkssupport.com</p>
+                <p class="p-3-footer">+34 541 09 92 21</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

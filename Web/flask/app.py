@@ -20,6 +20,9 @@ def drinks():
 def members():
         return render_template('members.html')
 
+@app.route('/login')
+def login():
+     return render_template('login.html')
 
 # FORMULARIO 
 @app.route('/suscribirse', methods=['POST'])
