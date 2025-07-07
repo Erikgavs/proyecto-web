@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
 </head>
 <body>
-    
+    <!--HEADER-->
+    <header>
+        <h1>Login</h1>
+    </header>
+    <!--PANEL DE NAVEGACIÓN-->
+    <nav>
+        <ul class="nav-list">
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
