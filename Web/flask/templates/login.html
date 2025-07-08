@@ -6,17 +6,47 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
 </head>
-<body>
+<body class="body-login">
     <!--HEADER-->
     <header>
         <h1>Login</h1>
     </header>
-    <!--PANEL DE NAVEGACIÓN-->
-    <nav>
-        <ul class="nav-list">
-            <li><a href="{{ url_for('login') }}">Login</a></li>
-            <li><a href="{{ url_for('register') }}">Register</a></li>
-        </ul>
-    </nav>
+    
+    <main class="main-login">
+        <div class="login">
+            <section>
+                <h1>Login</h1>
+                <form class="formulario-login" method="POST">
+                    <div>
+                        <label class="label-2" for="email">Put your email</label>
+                        <input class="input-2" id="email" type="text" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div>
+                        <br>
+                        <br>
+                        <br>
+                        <label class="label-3" for="password">Put your Password</label> 
+                        <input class="input-3" type="password" id="password" name="password" placeholder="******" required>
+                    </div>
+                </form>
+                <div>
+                    <h3><a href="register.html">Register</a></h3>
+                    <h3><a href="">Forgot password</a></h3>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--FOOTER-->
+     <div class="footer-flex">
+        <footer>
+            <h1>By PowerDrinks.org</h1>
+            <div class="contact">
+                <!--Redes sociales y número-->
+                <p class="p-1-footer">powerdrinks.com</p>
+                <p class="p-2-footer">powerdrinkssupport.com</p>
+                <p class="p-3-footer">+34 541 09 92 21</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

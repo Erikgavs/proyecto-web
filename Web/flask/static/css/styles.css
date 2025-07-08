@@ -801,5 +801,62 @@ footer h1{
     transform: scale(1.20);
 }
 
-/* Página Login*/
+/* PÁGINA DE LOGIN */
+
+.body-login{
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN */
+
+.main-login{
+    background-color: black;
+    color: white;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* CONTENEDOR CENTRADO */
+}
+
+.login{
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    margin-bottom: 150px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1));
+    transition: transform .2s;
+}
+
+.login h1{
+    font-size: 30px;
+}
+
+.login:hover{
+    transform: scale(1.08)
+}
+
+
+/* FORMULARIO */
+
+
+
+.label-2{
+    font-size: 20px;
+}
+
+.input-2{
+    margin-top: 10px;
+    width: 400px;
+}
+
+.label-3{
+    font-size: 20px;
+}
+
+.input-3{
+    width: 400px;
+    margin-top: 10px;
+}
 
