@@ -860,3 +860,20 @@ footer h1{
     margin-top: 10px;
 }
 
+/* AJUSTES DEL FORMULARIO */
+
+.div-2-form{
+    margin-top: 25px;
+}
+
+
+.div-2-form button{
+    margin: 19px;
+    width: 300px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: 2px solid green;
+    border-radius: 15px;
+    height: 35px;
+}

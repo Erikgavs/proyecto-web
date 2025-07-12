@@ -16,21 +16,19 @@
         <div class="login">
             <section>
                 <h1>Login</h1>
-                <form class="formulario-login" method="POST">
+                <form class="formulario-login" method="POST" action="/runsesion">
                     <div>
                         <label class="label-2" for="email">Put your email</label>
                         <input class="input-2" id="email" type="text" name="email" placeholder="example@gmail.com" required>
                     </div>
-                    <div>
-                        <br>
-                        <br>
-                        <br>
+                    <div class="div-2-form">
                         <label class="label-3" for="password">Put your Password</label> 
                         <input class="input-3" type="password" id="password" name="password" placeholder="******" required>
+                        <button>Submit</button>
                     </div>
                 </form>
                 <div>
-                    <h3><a href="register.html">Register</a></h3>
+                    <h3><a href="{{ url_for('register') }}">Register</a></h3>
                     <h3><a href="">Forgot password</a></h3>
                 </div>
             </section>

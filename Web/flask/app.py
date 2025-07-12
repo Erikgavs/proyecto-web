@@ -24,11 +24,11 @@ def members():
 def login():
      return render_template('login.html')
 
-@app.route('/register')
+@app.route('/login/register')
 def register():
      return render_template('register.html')
 
-# FORMULARIO 
+# FORMULARIO INDEX.HTML
 @app.route('/suscribirse', methods=['POST'])
 def suscribirse():
     email = request.form.get('mail')
@@ -37,6 +37,17 @@ def suscribirse():
     with open("suscriptores.txt", "a") as file:
         file.write(f"{email}, {numero}\n")
     return redirect('/')
+
+#FORMULARIO LOGIN
+@app.route('/runsesion', methods=['POST'])
+def runsesion():
+    email = request.form.get('email')
+    contraseña = request.form.get('password')
+    print(f'Nuevo inicio de sesión, correo {email} y contraseña {contraseña}')
+    with open("inicios_sesión.txt", "a") as file:
+        file.write(f"Correo: {email}, Contraseña: {contraseña}\n")
+    return redirect('/') # CAMBIAR ESTA LÍNEA CUANDO LAS NUEVAS PÁGINAS ESTÉN CREADAS
+
 
 if __name__ == '__main__':
     app.run(debug=True)
