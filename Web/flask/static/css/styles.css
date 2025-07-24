@@ -877,3 +877,44 @@ footer h1{
     border-radius: 15px;
     height: 35px;
 }
+
+/* PÁGINA REGISTER */
+
+/* BODY */
+.body-register{
+    margin: 0;
+}
+
+/* MAIN */
+
+.main-register{
+    background-color: black;
+    color: white;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* CONTENEDOR CENTRADO */
+}
+
+/* DENTRO DEL MAIN, EL PANEL DE REGISTRO */
+
+.register{
+    text-align: center;
+    margin-bottom: 150px;
+    width: 500px;
+    height: 400px;
+    border: 1px solid white;
+}
+
+.div-2-form-register{
+    margin-top: 25px;
+}
+
+.input-password1, .input-password2{
+    margin-top: 10px;
+    width: 400px;
+}
+
+.mensaje-error{
+    color: red;
+}

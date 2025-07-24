@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </head>
-<body>
-    
+<body class="body-register">
+    <!--HEADER-->
+    <header>
+        <h1>Register</h1>
+    </header>
+
+    <!--MAIN-->
+    <main class="main-register">
+        <div class="register">
+            <section>
+                <h1>Register</h1>
+                <form class="formulario-register" method="POST" action="/createsesion">
+                    <div>
+                        <label class="label-3" for="email">Put your email</label>
+                        <input class="input-3" type="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="div-2-form-register">
+                        <label class="label-3" for="password1">Create a password</label>
+                        <input class="input-password1" type="password" name="password1" placeholder="******" required>
+                    </div>
+                    <div class="div-2-form-register">
+                        <label class="label-3" for="password2">Confirm your password</label>
+                        <input class="input-password2" type="password" name="password2" placeholder="******" required>
+                    </div>
+
+                    <p class="mensaje-error"></p>
+
+                    <button class="boton-form">Sumbit</button>
+
+                    <!--Arreglar form y comprobar q el js funciona-->
+            </section>
+        </div>
+    </main>
 </body>
 </html>
