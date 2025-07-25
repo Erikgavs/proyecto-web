@@ -1,4 +1,3 @@
-
 // SCROLL DE LA PÁGINA PRINCIPAL
 function scrollToSection() {
     document.getElementById('ancla').scrollIntoView({
@@ -23,3 +22,6 @@ form.addEventListener('submit', function(event) {
 });
 
 // REVISAR APARTADO Y ENCARGARME DE ENTENDERLO BIEN BIEN
+
+// ME GUSTARÍA HACER EN EL FORGOT PASSWORD QUE AL ENVIAR EL CORREO CAMBIE EL TEXTO Y DIGA ALGO
+// COMO "Revisa tu correo" 

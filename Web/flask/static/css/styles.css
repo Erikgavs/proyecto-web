@@ -425,14 +425,17 @@ footer h1{
 
 .p-1-footer:hover{
     color: green;
+    cursor: pointer;
 }
 
 .p-2-footer:hover{
     color: green;
+    cursor: pointer;
 }
 
 .p-3-footer:hover{
     color: green;
+    cursor: pointer;
 }
 
 
@@ -866,6 +869,7 @@ footer h1{
     margin-top: 25px;
 }
 
+/* AQUÍ SE ENCUENTRA EL BOTÓN DEL FORM */
 
 .div-2-form button{
     margin: 19px;
@@ -876,6 +880,7 @@ footer h1{
     border: 2px solid green;
     border-radius: 15px;
     height: 35px;
+    cursor: pointer;
 }
 
 /* PÁGINA REGISTER */
@@ -900,10 +905,16 @@ footer h1{
 
 .register{
     text-align: center;
-    margin-bottom: 150px;
     width: 500px;
     height: 400px;
-    border: 1px solid white;
+    margin-bottom: 150px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1));
+    transition: transform .2s;
+}
+
+.register:hover{
+    transform: scale(1.08)
 }
 
 .div-2-form-register{
@@ -915,6 +926,24 @@ footer h1{
     width: 400px;
 }
 
+.boton-form{
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 2px solid green;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
 .mensaje-error{
     color: red;
+}
+
+.login-link{
+    font-size: 20px;
+    margin-top: 25px;
+    cursor: pointer;
 }

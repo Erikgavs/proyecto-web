@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template, request, redirect # RENDER TEMPLATE PERMITE LEER LOS ARCHIVOS DE LA PLANTILLA TEMPLATES
+from flask import Flask, render_template, request, redirect, url_for # RENDER TEMPLATE PERMITE LEER LOS ARCHIVOS DE LA PLANTILLA TEMPLATES
 
 app = Flask(__name__)
 
@@ -47,6 +47,19 @@ def runsesion():
     with open("inicios_sesión.txt", "a") as file:
         file.write(f"Correo: {email}, Contraseña: {contraseña}\n")
     return redirect('/') # CAMBIAR ESTA LÍNEA CUANDO LAS NUEVAS PÁGINAS ESTÉN CREADAS
+
+#FORMULARIO REGISTER
+@app.route('/createsesion', methods=['POST'])
+def createsesion():
+    email = request.form.get('email')
+    contraseña = request.form.get('password1')
+    print(f'Creación de cuenta completada, correo: {email}, contraseña: {contraseña}')
+    with open("creacion_cuenta.txt", "a") as file:
+        file.write(f"Correo: {email}, contraseña: {contraseña}\n")
+    return redirect('/')
+
+# ARREGLAR LOS REDIRECTS
+
 
 
 if __name__ == '__main__':
