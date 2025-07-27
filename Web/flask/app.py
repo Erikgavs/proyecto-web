@@ -18,15 +18,19 @@ def drinks():
 
 @app.route('/members')
 def members():
-        return render_template('members.html')
+    return render_template('members.html')
 
 @app.route('/login')
 def login():
-     return render_template('login.html')
+    return render_template('login.html')
 
 @app.route('/login/register')
 def register():
-     return render_template('register.html')
+    return render_template('register.html')
+
+@app.route('/login/forgot')
+def forgotpassword():
+    return render_template('forgot.html')
 
 # FORMULARIO INDEX.HTML
 @app.route('/suscribirse', methods=['POST'])

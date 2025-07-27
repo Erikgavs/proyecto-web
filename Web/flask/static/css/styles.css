@@ -947,3 +947,20 @@ footer h1{
     margin-top: 25px;
     cursor: pointer;
 }
+
+/* PÁGINA DE RESTABLECIMIENTO DE CONTRASEÑA */
+
+/* BODY DE FORGOT*/
+
+.body-forgot{
+    margin: 0;
+}
+
+.main-forgot{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* CONTENEDOR CENTRADO */
+    min-height: 70vh;
+}
