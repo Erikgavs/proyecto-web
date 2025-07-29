@@ -62,6 +62,14 @@ def createsesion():
         file.write(f"Correo: {email}, contraseña: {contraseña}\n")
     return redirect('/')
 
+#FORMULARIO FORGOT PASSWORD
+#MAÑANA COMPROBAR SI FUNCIONA
+@app.route('/backup', methods=['POST'])
+def backup():
+    email = request.form.get('email')
+    with open("ebackup.txt", "a") as file:
+        file.write(f"Correo para recuperar contraseña {email}")
+
 # ARREGLAR LOS REDIRECTS
 
 
