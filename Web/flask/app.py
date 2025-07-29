@@ -29,7 +29,7 @@ def register():
     return render_template('register.html')
 
 @app.route('/login/forgot')
-def forgotpassword():
+def forgot():
     return render_template('forgot.html')
 
 # FORMULARIO INDEX.HTML

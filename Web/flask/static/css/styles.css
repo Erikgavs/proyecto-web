@@ -964,3 +964,36 @@ footer h1{
     justify-content: center; /* CONTENEDOR CENTRADO */
     min-height: 70vh;
 }
+
+/* SECTION QUE INCLUYE EL FORMULARIO */
+
+.backup-passwd{
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    margin-bottom: 150px;
+    border: 1px solid white;
+}
+
+/* PÁRRAFO DEL FORMULARIO */
+
+.p-backup{
+    text-align: center;
+    border: 1px solid white;
+    width: 100%;
+}
+
+
+/* FORMULARIO DE RECUPERACIÓN DE CONTRASEÑA*/
+
+.backup-passwd{
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    margin-bottom: 150px;
+    border: 1px solid white;
+}
+
+.input-4{
+    width: 490px;
+}
