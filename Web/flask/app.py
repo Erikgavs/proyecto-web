@@ -68,7 +68,8 @@ def createsesion():
 def backup():
     email = request.form.get('email')
     with open("ebackup.txt", "a") as file:
-        file.write(f"Correo para recuperar contraseña {email}")
+        file.write(f"Correo para recuperar contraseña: {email}\n")
+    return redirect('/')
 
 # ARREGLAR LOS REDIRECTS
 
