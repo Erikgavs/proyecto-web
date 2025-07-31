@@ -972,14 +972,12 @@ footer h1{
     width: 500px;
     height: 250px;
     margin-bottom: 150px;
-    border: 1px solid white;
 }
 
 /* PÁRRAFO DEL FORMULARIO */
 
 .p-backup{
     text-align: center;
-    border: 1px solid white;
     width: 100%;
 }
 
@@ -989,13 +987,20 @@ footer h1{
 .backup-passwd{
     text-align: center;
     width: 500px;
-    height: 250px;
+    height: 270px;
     margin-bottom: 150px;
-    border: 1px solid white;
+    background: linear-gradient(to bottom, #055f05, rgb(1, 12, 1));
+    border-radius: 30px;
+    transition: transform .2s;
+}
+
+.backup-passwd:hover{
+    transform: scale(1.08);
 }
 
 .input-4{
-    width: 490px;
+    margin-top: 15px;
+    width: 400px;
 }
 
 /* BOTÓN */
