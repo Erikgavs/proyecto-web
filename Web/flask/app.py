@@ -32,6 +32,10 @@ def register():
 def forgot():
     return render_template('forgot.html')
 
+@app.route('/login/privileges')
+def privileges():
+    return render_template('privileges.html')
+
 # FORMULARIO INDEX.HTML
 @app.route('/suscribirse', methods=['POST'])
 def suscribirse():
