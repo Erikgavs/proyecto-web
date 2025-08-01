@@ -1027,5 +1027,14 @@ footer h1{
 /* MAIN */
 
 .main-privileges{
+    background-color: black;
+    color: white;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.article-privileges{
+    margin-bottom: 250px;
 }
