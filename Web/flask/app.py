@@ -54,7 +54,7 @@ def runsesion():
     print(f'Nuevo inicio de sesión, correo {email} y contraseña {contraseña}')
     with open("inicios_sesión.txt", "a") as file:
         file.write(f"Correo: {email}, Contraseña: {contraseña}\n")
-    return redirect('/') # CAMBIAR ESTA LÍNEA CUANDO LAS NUEVAS PÁGINAS ESTÉN CREADAS
+    return redirect('/login/privileges') # CAMBIAR ESTA LÍNEA CUANDO LAS NUEVAS PÁGINAS ESTÉN CREADAS
 
 #FORMULARIO REGISTER
 @app.route('/createsesion', methods=['POST'])

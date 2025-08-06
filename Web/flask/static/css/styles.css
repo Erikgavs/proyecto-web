@@ -1029,12 +1029,54 @@ footer h1{
 .main-privileges{
     background-color: black;
     color: white;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 80vh;
 }
 
 .article-privileges{
-    margin-bottom: 250px;
+    border: 1px solid white;
+    height: 100px
+}
+
+.header-article{
+    text-align: center;
+    border: 1px solid white;
+    height: 100px;
+}
+
+.article-privileges p{
+    margin-bottom: 350px;
+}
+
+/* BOTONES */
+
+.botones{
+    display: flex;
+    gap: 300px;
+    margin-bottom: 25px;
+}
+
+/* BOTONES SELECCIONADOS INDIVIDUALMENTE*/
+
+.Offers{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0px;
+    font-size: 25px;
+}
+
+.New_Drinks{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0px;
+    font-size: 25px;
+}
+
+.Merch{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0px;
+    font-size: 25px;
 }
