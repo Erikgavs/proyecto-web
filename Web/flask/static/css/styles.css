@@ -1064,8 +1064,13 @@ footer h1{
     border-radius: 25px;
     background: transparent;
     color: white;
-    border: 3px green solid;
     font-size: 25px;
+    border: 3px green solid;
+    cursor: pointer;
+}
+
+.Offers:hover{
+    transition: ease-in red;
 }
 
 .New_Drinks{
