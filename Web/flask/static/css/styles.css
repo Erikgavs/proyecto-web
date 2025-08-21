@@ -1029,17 +1029,15 @@ footer h1{
 .main-privileges{
     background-color: black;
     color: white;
-    height: 80vh;
+    height: 70vh;
 }
 
 .article-privileges{
-    border: 1px solid white;
     height: 100px
 }
 
 .header-article{
     text-align: center;
-    border: 1px solid white;
     font-size: 20px;
     height: 125px;
 }
@@ -1067,10 +1065,11 @@ footer h1{
     font-size: 25px;
     border: 3px green solid;
     cursor: pointer;
+    transition: transform .2s;
 }
 
 .Offers:hover{
-    transition: ease-in red;
+    transform: scale(1.10);
 }
 
 .New_Drinks{
@@ -1082,6 +1081,11 @@ footer h1{
     background: transparent;
     border: 3px green solid;
     color: white;
+    transition: transform .2s;
+}
+
+.New_Drinks:hover{
+    transform: scale(1.10);
 }
 
 .Merch{
@@ -1093,4 +1097,9 @@ footer h1{
     background: transparent;
     border: 3px green solid;
     color: white;
+    transition: transform .2s;
+}
+
+.Merch:hover{
+    transform: scale(1.10);
 }
