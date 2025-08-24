@@ -1069,7 +1069,7 @@ footer h1{
 }
 
 .Offers:hover{
-    transform: scale(1.10);
+    transform: scale(1.15);
 }
 
 .New_Drinks{
@@ -1085,7 +1085,7 @@ footer h1{
 }
 
 .New_Drinks:hover{
-    transform: scale(1.10);
+    transform: scale(1.15);
 }
 
 .Merch{
@@ -1101,5 +1101,12 @@ footer h1{
 }
 
 .Merch:hover{
-    transform: scale(1.10);
+    transform: scale(1.15);
+}
+
+/* Página Merch */
+
+/* Body */
+.body-merch{
+    margin: 0;
 }

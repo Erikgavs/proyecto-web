@@ -36,6 +36,10 @@ def forgot():
 def privileges():
     return render_template('privileges.html')
 
+@app.route('/login/privileges/merch')
+def merch():
+    return render_template('merch.html')
+
 # FORMULARIO INDEX.HTML
 @app.route('/suscribirse', methods=['POST'])
 def suscribirse():
